@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* backgrounds */
+  --bg-start: #1f3756;
+  --bg-end: #141539;
+
+  /* main colors */
+  --white: #ffffff;
+  --off-white: #f3f3f3;
+  --text-dark: #3b4363;
+  --text-gray: rgb(90, 90, 90);
+  --score-blue: #5f97f6;
+
+  /* borders / overlays */
+  --border-color: rgba(190, 190, 190, 0.55);
+  --overlay-dark: rgba(0, 0, 0, 0.25);
+  --empty-choice-bg: rgba(0, 0, 0, 0.18);
+
+  /* game choice colors */
+  --paper-color: #4865f4;
+  --paper-shadow: #2233d2;
+
+  --scissors-color: #eca922;
+  --scissors-shadow: #c76c1b;
+
+  --rock-color: #dc2e4e;
+  --rock-shadow: #9d1634;
+
+  /* shadows */
+  --inner-shadow: inset 0 6px rgba(0, 0, 0, 0.18);
+  --winner-ring-1: 0 0 0 22px rgba(255, 255, 255, 0.04);
+  --winner-ring-2: 0 0 0 48px rgba(255, 255, 255, 0.03);
+  --winner-ring-3: 0 0 0 76px rgba(255, 255, 255, 0.02);
+
+  /* radius */
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-circle: 50%;
+
+  /* transitions */
+  --transition-fast: 0.2s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  min-height: 100vh;
+  position: relative;
+  background: radial-gradient(circle at top, var(--bg-start) 0%, var(--bg-end) 100%);
+  overflow-x: hidden;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 24px 18px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 65px;
+}
