@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/styles/base.css">
+  <link rel="stylesheet" href="./assets/styles/status.css">
+  <link rel="stylesheet" href="./assets/styles/choose.css">
+  <link rel="stylesheet" href="./assets/styles/rules.css">
+  <link rel="stylesheet" href="./assets/styles/result.css">
+  <link rel="stylesheet" href="./assets/styles/responsive.css">
+  <title>Rock paper scissors</title>
+</head>
+<body>
+  <main class="container">
+    <div class="status-container">
+      <img src="./assets/images/logo.svg" alt="rock-paper-scissors-game">
+      
+      <div class="score-container">
+        <p class="score-title">SCORE</p>
+        <p class="score" id="score"></p>
+      </div>
+    </div>
+    
+    <div class="choose-container" id="choose">
+      <img src="./assets/images/bg-triangle.svg" alt="triangle" class="triangle">
+
+      <button class="choice paper" id="paper">
+        <img src="./assets/images/icon-paper.svg" alt="paper">
+      </button>
+
+      <button class="choice scissors" id="scissors">
+        <img src="./assets/images/icon-scissors.svg" alt="scissors">
+      </button>
+
+      <button class="choice rock" id="rock">
+        <img src="./assets/images/icon-rock.svg" alt="rock">
+      </button>
+    </div>
+    
+    <div class="choices-container" id="choices">
+      <div class="choices-headers">
+        <p class="choices-header">YOU PICKED</p>
+        <p class="choices-header">THE HOUSE PICKED</p>
+      </div>
+
+      <div class="choices">
+        <div class="choice-slot player-slot">
+          <div class="player-choice" id="playerChoice"></div>
+        </div>
+
+        <div class="choice-slot computer-slot">
+          <div class="computer-choice" id="computerChoice">
+            <div class="empty-choice"></div>
+          </div>
+        </div>
+
+        <div class="result-box" id="resultBox">
+          <p class="result-text" id="resultText"></p>
+          <button class="play-again-btn" id="playAgainBtn">PLAY AGAIN</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="rules">
+      <button class="rules-btn" id="rulesBtn">RULES</button>
+    </div>
+  </main>
+  
+  <div class="rules-container" id="rulesBox">
+    <div class="rules-box">
+      <div class="rules-header">
+        <h2 class="rules-title">RULES</h2>
+      </div>
+
+      <img src="./assets/images/image-rules.svg" alt="rules" class="rules-image">
+      <img src="./assets/images/icon-close.svg" alt="close" class="close-btn" id="closeBtn">
+    </div>
+  </div>
+  
+  <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
