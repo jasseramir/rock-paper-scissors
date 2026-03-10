@@ -1,0 +1,41 @@
+/* top box */
+.status-container {
+  width: 100%;
+  max-width: 720px;
+  padding: 15px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 0 0 4px var(--border-color);
+}
+
+.status-container img {
+  width: 95px;
+  display: block;
+}
+
+.score-container {
+  width: 85px;
+  height: 85px;
+  border-radius: var(--radius-sm);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-container .score-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--score-blue);
+  letter-spacing: 2px;
+}
+
+.score-container .score {
+  font-size: 38px;
+  font-weight: 900;
+  color: var(--text-gray);
+  line-height: 1;
+}
