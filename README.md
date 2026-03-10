@@ -1,4 +1,4 @@
-# 🎮 Professional Rock Paper Scissors Game
+# Professional Rock Paper Scissors Game
 
 A modern, high-quality take on the classic **Rock, Paper, Scissors** game. This project focuses on delivering a seamless user experience with a "Pro" visual style, built entirely using frontend web technologies.
 
